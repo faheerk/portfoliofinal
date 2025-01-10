@@ -1,0 +1,29 @@
+<!-- Video Background -->
+<video autoplay muted loop id="GalleryV">
+    <source src="assets/vids/gallery.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <div class="container">
+    <p class="h1 text-center fw-bold mt-2" style="color: #6c8a95;">{{ title }}</p>
+    <div class="row">
+      <div class="col-md-6 mt-3" *ngFor="let image of images | slice:0:2">
+        <div class="image-container">
+          <img [src]="image.src" [alt]="image.alt" class="img-fluid mb-3 bordered-image" [routerLink]="image.routerLink || null" />
+        </div>
+      </div>
+      <div class="col-md-6 mt-3" *ngFor="let image of images | slice:2:4">
+        <div class="image-container">
+          <img [src]="image.src" [alt]="image.alt" class="img-fluid mb-3 bordered-image" [routerLink]="image.routerLink || null" />
+        </div>
+      </div>
+    </div>
+  
+    <!-- Back to Home Button -->
+    <div class="text-center mt-5 mb-5">
+      <button class="btn btn-transparent-blur fw-bold" routerLink="/home">
+        <i class="fas fa-arrow-left me-2"></i> Back to Home
+      </button>
+    </div>
+  </div>
+  

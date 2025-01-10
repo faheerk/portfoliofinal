@@ -1,0 +1,41 @@
+.custom-navbar {
+    width: 32%; /* Reduce the width to make navbar smaller */
+    margin: auto; /* Center the navbar */
+    border-radius: 15px 15px 0 0; /* Curved edges */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    padding: 5px 10px; /* Reduced padding for tighter fit */
+
+}
+  
+  .navbar-nav {
+    justify-content: center; /* Center align items */
+    display: flex;
+    gap: 5px; /* Reduced space between items */
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    font-size: 0.85rem; /* Slightly smaller font size */
+    padding: 5px 8px; /* Reduce padding around links */
+  }
+  
+  .navbar-toggler {
+    border: none;
+    padding: 2px 5px; /* Reduce toggle button size */
+  }
+  
+  /* Social icons adjustments */
+  .social-icons {
+    margin-left: 5px; /* Reduced margin between social icons and navbar */
+  }
+  
+  .social-icons .nav-link {
+    font-size: 1rem;
+    margin-right: 3px; /* Smaller spacing between icons */
+    color: #ffffff;
+    padding: 5px;
+  }
+  
+  .social-icons .nav-link:hover {
+    color: #f39c12; /* Hover effect for better UX */
+  }
+  

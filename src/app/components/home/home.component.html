@@ -1,0 +1,25 @@
+<video autoplay muted loop id="HomeV">
+  <source src="assets/vids/home.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<div class="col-md-12 pic">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="display-1 fw-bold text-white faheer text-center">{{ name }}</h1>
+        <p class="text-center h3 text-warning">{{ description }}</p>
+        <div class="text-center mt-4">
+          <button class="btn btn-transparent-blur" routerLink="/gallery">
+            <i class="fas fa-images me-2"></i> View Gallery
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img [src]="photo" alt="{{ name }}" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<navbar></navbar>

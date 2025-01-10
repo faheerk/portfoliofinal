@@ -1,0 +1,67 @@
+/* Video Background Styling */
+#ProjectsV {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Ensure the page takes full height and prevents overflow */
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    height: 100%;
+    width: 100%; /* Ensure full width */
+  }
+  
+  /* Container Styling */
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Align cards vertically */
+    align-items: center; /* Center the cards horizontally */
+    height: 100vh; /* Full viewport height */
+    gap: 20px; /* Space between the cards */
+    box-sizing: border-box; /* Prevent any additional margin or padding affecting layout */
+  }
+  
+  /* Styling for the cards */
+  .card {
+    background-color: rgba(0, 0, 0, 0.3); /* Black with 30% transparency */
+    border: none; /* Remove borders */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: white; /* Ensure text is readable */
+    border-radius: 10px; /* Rounded corners */
+    backdrop-filter: blur(5px); /* Adds frosted-glass effect */
+    -webkit-backdrop-filter: blur(5px); /* For Safari support */
+    width: 70%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  /* Hover effect for cards */
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Increase shadow depth */
+  }
+  
+  /* Card Image Styling */
+  .card-img-top {
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 10px 10px 0 0; /* Rounded top corners to match card */
+  }
+  
+  /* Hover effect for card image */
+  .card-img-top:hover {
+    transform: scale(1.1); /* Zoom in the image on hover */
+  }
+  
+  /* Adjust card body to match hover effects */
+  .card-body {
+    border-radius: 10px; /* Match card rounding */
+  }
+  
